@@ -1,0 +1,32 @@
+Ready Works checklist:
+
+- Responsive website using bootstrap
+- At least 2 pages
+- Use 3 js vendors:
+    - Bootstrap
+    - Chartjs
+    - Datatables
+- Charts page
+    - Pie Chart 1
+        - List of Top 10 Computer Models with the number of computers for each Model.
+        - Column `computer_model`
+    - Pie Chart 2
+        - List of Operating Systems with the number of computers having each Operating System.
+        - Column `operating_system`
+    -Bar Chart 2
+        - renders the Locations on the x-axis with the total number of
+        - computers in each location rendered on the y-axis.
+        - Column `location`
+- Table page
+    - The table page should render a server-side Datatable with all the records and
+    - columns inside of the `computer` table.
+    - table should have a header
+    - Dropdown for Department – options from `department` column
+    - Input Box for Computer Model - filter of any text in this column
+    - Dropdown for Computer Type – options from column `computer_type` column
+    - Ability to clear and reset filters button
+    - Reset datatable to original state. ??? button to truncate table and rerun sql for computer tables.
+    - Omni filter for table
+
+Database Notes:
+- Name: readyworks_db
