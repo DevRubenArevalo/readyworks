@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Computer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::get('/charts', function () {
+    return view('chart');
+});
+
+Route::get('/tables', function () {
+    $computer = new Computer();
+    $departments = $computer->getDepartments();
+    $computerModels = $computer->getComputerModels();
+    return view('table', ['departments'=>$departments, 'computerModels'=>$computerModels]);
 });
